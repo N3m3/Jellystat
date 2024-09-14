@@ -7,8 +7,8 @@
 # testing
 /coverage
 /backend/backup-data
-.vscode
-.idea
+/.vscode
+/.idea
 
 # production
 /build
@@ -19,6 +19,7 @@
 .env.development.local
 .env.test.local
 .env.production.local
+/.github
 
 npm-debug.log*
 yarn-debug.log*
