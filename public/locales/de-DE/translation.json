@@ -52,7 +52,7 @@
     "LAST_7_DAYS": "In den letzten 7 Tagen",
     "LAST_30_DAYS": "In den letzten 30 Tagen",
     "ALL_TIME": "Gesamt",
-    "ITEM_STATS": "Objekt Statistiken"
+    "ITEM_STATS": "Statistiken"
   },
   "ITEM_INFO": {
     "FILE_PATH": "Dateipfad",
@@ -75,7 +75,7 @@
     "ACTIVITY": "Aktivität",
     "OPTIONS": "Optionen"
   },
-  "ITEM_ACTIVITY": "Objekt Aktivitäten",
+  "ITEM_ACTIVITY": "Aktivitäten",
   "ACTIVITY_TABLE": {
     "MODAL": {
       "HEADER": "Stream Info"
@@ -143,7 +143,7 @@
     "MINUTES": "Minuten",
     "SECOND": "Sekunde",
     "SECONDS": "Sekunden",
-    "PLAYS": "Wiedergaben",
+    "PLAYS": "Anzahl Wiedergaben",
     "ITEMS": "Objekte",
     "STREAMS": "Streams"
   },
@@ -176,7 +176,7 @@
     "API_KEYS": "API-Schlüssel",
     "KEY_NAME": "Schlüssel-Name",
     "KEY": "Schlüssel",
-    "NAME": "Name",
+    "NAME": "Titel",
     "ADD_KEY": "Schlüssel hinzufügen",
     "DURATION": "Dauer",
     "EXECUTION_TYPE": "Art der Ausführung",
@@ -229,7 +229,7 @@
   "SEASON": "Staffel",
   "SEASONS": "Staffeln",
   "EPISODE": "Folge",
-  "EPISODES": "Folgen",
+  "EPISODES": "Folge(n)",
   "MOVIES": "Filme",
   "MUSIC": "Musik",
   "SONGS": "Songs",
@@ -243,7 +243,7 @@
   "NOT_ARCHIVED": "Nicht archiviert",
   "ALL": "Alle",
   "CLOSE": "Schließen",
-  "TOTAL_PLAYS": "Gesamte Wiedergaben",
+  "TOTAL_PLAYS": "Anzahl Wiedergaben",
   "TITLE": "Name",
   "VIEWS": "Anzahl Aufrufe",
   "WATCH_TIME": "Dauer",
