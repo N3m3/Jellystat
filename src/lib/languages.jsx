@@ -7,4 +7,8 @@ export const languages = [
     id: "fr-FR",
     description: "French",
   },
+  {
+    id: "de-DE",
+    description: "German",
+  },
 ];
