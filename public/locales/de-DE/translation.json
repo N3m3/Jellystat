@@ -17,7 +17,7 @@
     "LIBRARY_OVERVIEW": "Bibliotheken"
   },
   "SESSIONS": {
-    "NO_SESSIONS": "Keine aktive Sitzung"
+    "NO_SESSIONS": "Keine aktive Sitzungen"
   },
   "STAT_CARDS": {
     "MOST_VIEWED_MOVIES": "MEISTGESEHENE FILME",
@@ -29,7 +29,7 @@
     "MOST_VIEWED_LIBRARIES": "MEISTGESEHENE BIBLIOTHEKEN",
     "MOST_USED_CLIENTS": "MEISTGENUTZTE CLIENTS",
     "MOST_ACTIVE_USERS": "AKTIVSTE BENUTZER",
-    "CONCURRENT_STREAMS": "MEISTGENUTZTER STREAM-TYPEN"
+    "CONCURRENT_STREAMS": "MEISTGENUTZTE STREAM-ARTEN"
   },
   "LIBRARY_OVERVIEW": {
     "MOVIE_LIBRARIES": "FILM BIBLIOTHEKEN",
@@ -38,20 +38,20 @@
     "MIXED_LIBRARIES": "GEMISCHTE BIBLIOTHEKEN"
   },
   "LIBRARY_CARD": {
-    "LIBRARY": "Bibliothek",
-    "TOTAL_TIME": "Gesamte Zeit",
-    "TOTAL_FILES": "Gesamte Dateien",
-    "LIBRARY_SIZE": "Größe der Bibliothek",
-    "TOTAL_PLAYBACK": "Gesamte Wiedergabedauer",
+    "LIBRARY": "Art der Bibliothek",
+    "TOTAL_TIME": "Gesamte Abspieldauer",
+    "TOTAL_FILES": "Anzahl Dateien",
+    "LIBRARY_SIZE": "Speichergröße der Bibliothek",
+    "TOTAL_PLAYBACK": "Insgesamte Wiedergabedauer",
     "LAST_PLAYED": "Zuletzt abgespielt",
     "LAST_ACTIVITY": "Letzte Aktivität",
-    "TRACKED": "Tracked"
+    "TRACKED": "Erfasst"
   },
   "GLOBAL_STATS": {
-    "LAST_24_HRS": "Letzten 24 Stunden",
-    "LAST_7_DAYS": "Letzten 7 Tage",
-    "LAST_30_DAYS": "Letzten 30 Tage",
-    "ALL_TIME": "Insgesamt",
+    "LAST_24_HRS": "In den letzten 24 Stunden",
+    "LAST_7_DAYS": "In den letzten 7 Tagen",
+    "LAST_30_DAYS": "In den letzten 30 Tagen",
+    "ALL_TIME": "Gesamt",
     "ITEM_STATS": "Objekt Statistiken"
   },
   "ITEM_INFO": {
@@ -107,17 +107,17 @@
   },
   "PURGE_OPTIONS": {
     "PURGE_CACHE": "Zwischengespeicherte Objekte löschen",
-    "PURGE_CACHE_WITH_ACTIVITY": "Löschen von zwischengespeicherten Objekten und Wiedergabeaktivitäten",
+    "PURGE_CACHE_WITH_ACTIVITY": "Zwischengespeicherten Objekte und Wiedergabeaktivitäten löschen",
     "PURGE_LIBRARY_CACHE": "Zwischengespeicherte Bibliothek und Objekte bereinigen",
     "PURGE_LIBRARY_CACHE_WITH_ACTIVITY": "Zwischengespeicherte Bibliothek, Objekte und Aktivitäten bereinigen",
-    "PURGE_LIBRARY_ITEMS_CACHE": "Nur zwischengespeicherte Objekte der Bibliothek bereinigen",
-    "PURGE_LIBRARY_ITEMS_CACHE_WITH_ACTIVITY": "Nur zwischengespeicherte Objekte der Bibliothek und Aktivitäten bereinigen",
-    "PURGE_ACTIVITY": "Sind Sie sicher, dass Sie die ausgewählte Wiedergabeaktivität löschen möchten?"
+    "PURGE_LIBRARY_ITEMS_CACHE": "Zwischengespeicherte Objekte der Bibliothek bereinigen",
+    "PURGE_LIBRARY_ITEMS_CACHE_WITH_ACTIVITY": "Zwischengespeicherte Objekte und Aktivitäten der Bibliothek bereinigen",
+    "PURGE_ACTIVITY": "Sind Sie sicher, dass Sie die ausgewählte Wiedergabeaktivitäten löschen möchten?"
   },
   "ERROR_MESSAGES": {
     "FETCH_THIS_ITEM": "Dieses Objekt von Jellyfin abrufen",
     "NO_ACTIVITY": "Keine Aktivitäten gefunden",
-    "NEVER": "Nie",
+    "NEVER": "Niemals",
     "N/A": "Nicht verfügbar",
     "NO_STATS": "Keine Statistiken anzuzeigen",
     "NO_BACKUPS": "Keine Backups gefunden",
@@ -149,9 +149,9 @@
   },
   "USERS_PAGE": {
     "ALL_USERS": "Alle Benutzer",
-    "LAST_CLIENT": "Letzter Client",
-    "LAST_SEEN": "Zuletzt gesehen",
-    "AGO": "her",
+    "LAST_CLIENT": "Zuletzt benutzter Client",
+    "LAST_SEEN": "Zuletzt online vor",
+    "AGO": "",
     "AGO_ALT": "",
     "USER_STATS": "Benutzer Statistiken",
     "USER_ACTIVITY": "Benutzer Aktivitäten"
@@ -159,7 +159,7 @@
   "STAT_PAGE": {
     "STATISTICS": "Statistiken",
     "DAILY_PLAY_PER_LIBRARY": "Tägliche Anzahl der Wiedergaben pro Bibliothek",
-    "PLAY_COUNT_BY": "Anzahl Wiedergaben von"
+    "PLAY_COUNT_BY": "Anzahl Wiedergaben pro"
   },
   "SETTINGS_PAGE": {
     "SETTINGS": "Einstellungen",
@@ -170,7 +170,7 @@
     "BACKUPS": "Backups",
     "CHOOSE_FILE": "Datei auswählen",
     "LOGS": "Logs",
-    "SIZE": "Größe",
+    "SIZE": "Dateigröße",
     "JELLYFIN_URL": "Jellyfin URL",
     "API_KEY": "API-Schlüssel",
     "API_KEYS": "API-Schlüssel",
@@ -191,7 +191,7 @@
     "UPDATE": "Update",
     "REQUIRE_LOGIN": "Login erforderlich",
     "TASK": "Aufgabe",
-    "TASKS": "Aufgaben",
+    "TASKS": "Bezeichnung der Aufgabe",
     "INTERVAL": "Intervall",
     "INTERVALS": {
       "15_MIN": "15 Minuten",
@@ -223,8 +223,8 @@
     "Backup": "Backup Jellystat"
   },
   "SEARCH": "Suche",
-  "TOTAL": "Insgesamt",
-  "LAST": "Zuletzt",
+  "TOTAL": "Gesamt",
+  "LAST": "Die letzten",
   "SERIES": "Serien",
   "SEASON": "Staffel",
   "SEASONS": "Staffeln",
@@ -237,16 +237,16 @@
   "LIBRARIES": "Bibliotheken",
   "USER": "Benutzer",
   "USERS": "Benutzer",
-  "TYPE": "Typ",
+  "TYPE": "Art",
   "NEW_VERSION_AVAILABLE": "Neue Version verfügbar",
   "ARCHIVED": "Archiviert",
   "NOT_ARCHIVED": "Nicht archiviert",
   "ALL": "Alle",
   "CLOSE": "Schließen",
   "TOTAL_PLAYS": "Gesamte Wiedergaben",
-  "TITLE": "Titel",
-  "VIEWS": "Aufrufe",
-  "WATCH_TIME": "Abspielzeit",
+  "TITLE": "Name",
+  "VIEWS": "Anzahl Aufrufe",
+  "WATCH_TIME": "Dauer",
   "LAST_WATCHED": "Zuletzt angesehen",
   "MEDIA": "Medien",
   "SAVE": "Speichern",
@@ -254,7 +254,7 @@
   "NO": "Nein",
   "FILE_NAME": "Dateiname",
   "DATE": "Datum",
-  "START": "Start",
+  "START": "Ausführen",
   "DOWNLOAD": "Download",
   "RESTORE": "Wiederherstellen",
   "ACTIONS": "Aktionen",
