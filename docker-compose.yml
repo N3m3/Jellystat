@@ -1,43 +1,40 @@
-version: '3'
-
 services:
   jellystat-db:
     image: postgres:15.2
     container_name: jellystat-db
     restart: unless-stopped
     environment:
-      POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: mypassword
+      TZ: Europe/Berlin
+      POSTGRES_DB: 'jellystat-db'
+      POSTGRES_USER: jellystat
+      POSTGRES_PASSWORD: password
+    networks:
+      - jellystat
     volumes:
-      - postgres-data:/var/lib/postgresql/data
+      - ./postgres-data:/var/lib/postgresql/data
 
   jellystat:
-    image: cyfershepard/jellystat:latest
+    # image: cyfershepard/jellystat:latest
+    build:
+      dockerfile: Dockerfile
     container_name: jellystat
     restart: unless-stopped
     environment:
-      POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: mypassword
-      POSTGRES_IP: jellystat-db
+      TZ: Europe/Berlin
+      POSTGRES_USER: jellystat
+      POSTGRES_PASSWORD: password
       POSTGRES_PORT: 5432
-      JWT_SECRET: "my-secret-jwt-key"
-      TZ: mytimezone # timezone (ex: Europe/Paris)
+      POSTGRES_IP: jellystat-db
+      POSTGRES_DB: jellystat-db
+      JWT_SECRET: '89a0ff32-a9f3-4b16-990c-2b472ace3ca3'
     volumes:
-      - jellystat-backup-data:/app/backend/backup-data
+      - ./jellystat-backup-data:/app/backend/backup-data
     ports:
       - "3000:3000"
     depends_on:
       - jellystat-db
+    networks:
+      - jellystat
       
 networks:
-  default:
-
-volumes:
-  postgres-data:
-  jellystat-backup-data:
-
-logging:
-  driver: "json-file"
-  options:
-    max-file: "5" # number of files or file count
-    max-size: "10m" # file size
+  jellystat:

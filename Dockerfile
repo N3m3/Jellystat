@@ -8,7 +8,7 @@ RUN npm cache clean --force
 RUN npm install
 
 COPY ./ ./
-COPY entry.sh ./
+COPY --chmod=755 entry.sh ./
 
 # Build the application
 RUN npm run build

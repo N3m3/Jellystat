@@ -31,3 +31,5 @@ yarn-error.log*
 
 # local deployment
 /dist
+/jellystat-backup-data
+/postgres-data
