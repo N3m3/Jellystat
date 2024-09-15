@@ -9,6 +9,7 @@
 /backend/backup-data
 .vscode
 .idea
+.eslintrc.cjs
 
 # production
 /build
