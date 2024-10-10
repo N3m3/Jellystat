@@ -27,6 +27,11 @@ services:
       POSTGRES_IP: jellystat-db
       POSTGRES_DB: jellystat-db
       JWT_SECRET: '89a0ff32-a9f3-4b16-990c-2b472ace3ca3'
+      FILE__DOCKERHUB_USER: /run/secrets/dh_user
+      FILE__DOCKERHUB_PASS: /run/secrets/dh_pass
+    secrets:
+      - dh_user
+      - dh_pass
     volumes:
       - ./jellystat-backup-data:/app/backend/backup-data
     ports:
@@ -35,6 +40,12 @@ services:
       - jellystat-db
     networks:
       - jellystat
+
+secrets:
+  dh_user:
+    file: ../.secrets/dh_user.txt
+  dh_pass:
+    file: ../.secrets/dh_pass.txt
       
 networks:
   jellystat:
